@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ol, ul{list-style: none;}
+body{font-size: 14px; font-family: 'Open Sans', sans-serif;}
+.clear:after{clear: both; display: block; content: '';}
+.center{width: 100%; height: auto; max-width: 1400px; margin: auto;}
+a{text-decoration: none; color:#111;}
+img{display: block;}
+button, input, textarea{outline: 0; font-family: 'Open Sans'; -webkit-appearance:none; border-radius: 0;}
+input[type="checkbox"]{-webkit-appearance:auto; border-radius: 0; border: 1px solid #fff;}
+input::placeholder, textarea::placeholder{color: #111;}
+input:focus, textarea:focus{background:#f8f8f8;}
