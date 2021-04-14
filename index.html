@@ -3,46 +3,50 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <title>Personal Site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
 
-
-    <title>Personal Site</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
+    
   </head>
   <body>
-    <header id="header">
-      <div class="header_top">
+    <header class="header">
+      <div class="header_top clear">
         <ul>
           <li><a href="#">LOGIN</a></li>
           <li><a href="#">JOIN</a></li>
-          <li><a href="#">KOR <i class="fa fa-angle-down"></i></a></li>
+          <li><a href="javascript:;">KOR<i class="fa fa-angle-down"></i></a>
+            <div class="lang">
+              <a href="">EN</a>
+              <a href="">CH</a>
+              <a href="">JP</a>
+            </div>
+          </li>
         </ul>
       </div>
       <nav class="gnb">
-        <div class="gnb_wrapper">
+        <div class="gnb_wrapper clear">
           <div class="gnb_menu">
             <ul class="menu_list">
               <li><a href="#">CELEB</a></li>
               <li><a href="#">PRODUCT</a></li>
-              <li><a href="#">&PICK</a></li>
+              <li><a href="#">&P!CK</a></li>
               <li><a href="#">EVENT</a></li>
               <li><a href="#">BRAND</a></li>
             </ul>
           </div>
-          <div class="gnb_logo">
-            <a href="#"><img src="img/logo.png" alt="로고"></a>
-          </div>
+          <h1 class="gnb_logo">
+            <a href="#"><span class="blind">네이버</span></a>
+          </h1>
           <div class="gnb_member">
             <ul>
-              <li><a href="#"><i class="fa fa-user"></i></a></li>
-              <li><a href="#"><i class="fa fa-search"></i></a></li>
-              <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
-              <li><a href="#"><i class="fa fa-gift"></i></a></li>
+              <li><a href="#"><i class="fi-rr-heart"></i><span class="blind">마이페이지</span></i></a></li>
+              <li><a href="#"><i class="fi-rr-heart"></i></i></a></li>
+              <li><a href="#"><i class="fi-rr-heart"></i></i></a></li>
+              <li><a href="#"><i class="fi-rr-heart"></i></a></li>
             </ul>
           </div>
         </div>
@@ -50,432 +54,141 @@
       <!-- <div class="header_bg"></div> -->
     </header>
     
-    <section id="main">
+    <section class="container">
       <div class="main_wrap">
         <div class="banner_bg"></div>
         <div class="swiper-container main_slide">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="banner_txt">
-                <a href="#">dasdasdasdasdasd</a>
-                <span></span>
-              </div>
-              <div class="banner_image">
+              <div class="img_wrap">
                 <img src="img/main_slide/main_slide_1.jpg" alt="">
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_2.jpg" alt="">
+              <div class="txt_wrap">
+                <h2>WENDY The First Mini Album 'Like Water'</h2>
+                <p>t Mini Album 'Like Wat <br>
+                  t Mini Album 'Like Wat
+                </p>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_3.jpg" alt="">
+              <div class="img_wrap">
+                <img src="img/main_slide/main_slide_1.jpg" alt="">
+              </div>
+              <div class="txt_wrap">
+                <a href="#">WENDY The First Mini Album 'Like Water'</a>
+                <span></span>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_4.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_5.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_6.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_7.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_8.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_9.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_10.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="banner_image">
-                <img src="img/main_slide/main_slide_11.jpg" alt="">
-              </div>
-            </div>
+            
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
           
           <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          <div class="btn prev"><i class="fi-rr-angle-left"><span class="blind">이전</span></i></div>
+          <div class="btn next"><i class="fi-rr-angle-right"><span class="blind">다음</span></i></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
+
 
       <div class="product">
         <h2 class="pro_title">Celeb for You</h2>
         <div class="pro_tab">
           <ul>
-            <li class="tab_1"><a href="#">BoA</a></li>
-            <li class="tab_2"><a href="#">TVXQ!</a></li>
-            <li class="tab_3"><a href="#">SUPER JUNIOR</a></li>
-            <li class="tab_4"><a href="#">GIRL'S GENERATION</a></li>
-            <li class="tab_5"><a href="#">SHINEE</a></li>
-            <li class="tab_6"><a href="#">f(x)</a></li>
-            <li class="tab_7"><a href="#">EXO</a></li>
-            <li class="tab_8"><a href="#">RED VELVET</a></li>
-            <li class="tab_9"><a href="#">NCT</a></li>
-            <li class="tab_10"><a href="#">WayV</a></li>
+            <li class="active">
+              <a href="#">BoA</a>
+          </li>
+            <li>
+              <a href="#">TVXQ!</a>
+            </li>
+            <li>
+              <a href="#">SUPER JUNIOR</a>
+            </li>
+            <li>
+              <a href="#">GIRL'S GENERATION</a>
+            </li>
+            <li>
+              <a href="#">SHINEE</a>
+            </li>
+            <li>
+              <a href="#">f(x)</a>
+            </li>
+            <li>
+              <a href="#">EXO</a>
+            </li>
+            <li>
+              <a href="#">RED VELVET</a>
+            </li>
+            <li>
+              <a href="#">NCT</a>
+            </li>
+            <li>
+              <a href="#">WayV</a>
+            </li>
           </ul>
         </div>
-        <div class="pro_item pro_item1 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">BoA
-                  <img src="img/pro_arrow.png" alt="">
+        <div class="pro_item_wrap">
+          <div class="pro_item active" id="proItem1">
+            <ul class="clear">
+              <li>
+                  <a href="#" class="pro_link">
+                    <div class="txt_wrap">
+                      <span>BoA</span>
+                      <img src="img/pro_arrow.png" alt="">
+                    </div>
+                  </a>
+              </li>
+              <!-- end of pro_link -->
+              <li>
+                <a href="#">
+                  <img src="img/pro_sample.png" alt="" />
+                  <div class="pro_desc">
+                    <strong>상품명</strong>
+                    <span class="desc">The 10th Album -BETTER (일반반)</span>
+                    <div class="prc_wrap">
+                      <span class="prc_normal">20000</span>
+                      <span class="prc_dis">10000</span>
+                    </div>
+                  </div>
+                </a>            
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pro_sample2.png" alt="">
+                  <div class="pro_desc">
+                    <p>이름</p>
+                    <a href="#">The 10th Album -BETTER (일반반)</a>
+                    <span>&#8361;20,200</span>
+                  </div>
                 </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/pro_sample3.png" alt="">
+                  <div class="pro_desc">
+                    <p>이름</p>
+                    <a href="#">The 10th Album -BETTER (일반반)</a>
+                    <span>&#8361;20,200</span>
+                  </div>
+                </a>
+              </li>
+              <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
+              <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
+              <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
+              <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
+              <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
+              <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
+            </ul>
+          </div>
         </div>
         <!-- pro item 1 end -->
-        <div class="pro_item pro_item2 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">TVXQ!
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 2 end -->
-
-        <div class="pro_item pro_item3 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">SUPER JUNIOR
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 3 end -->
-
-        <div class="pro_item pro_item4 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">GIRLS' GENERATION
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 4 end -->
-
-        <div class="pro_item pro_item5 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">SHINEE
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 5 end -->
-
-        <div class="pro_item pro_item6 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">f(x)
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 6 end -->
-
-        <div class="pro_item pro_item7 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">EXO
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 7 end -->
-
-        <div class="pro_item pro_item8 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">RED VELVET
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 8 end -->
-
-        <div class="pro_item pro_item9 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">NCT
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 9 end -->
-
-        <div class="pro_item pro_item10 clear">
-          <ul>
-            <div class="pro_link">
-              <div>
-                <a href="#">WayV
-                  <img src="img/pro_arrow.png" alt="">
-                </a>
-              </div>
-            </div>
-            <!-- end of pro_link -->
-            <li>
-              <a href="#">
-                <img src="img/pro_sample.png" alt="" />
-                <div class="pro_desc">
-                  <p>이름</p>
-                  <a href="#">The 10th Album -BETTER (일반반)</a>
-                  <span>&#8361;20,200</span>
-                </div>
-              </a>
-              
-            </li>
-            <li><a href="#"><img src="img/pro_sample2.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample3.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample4.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample5.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample6.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample7.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample8.png" alt=""></a></li>
-            <li><a href="#"><img src="img/pro_sample9.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- pro item 10 end -->
-
-        
       </div>
          
 
-      <div class="nugu">
-        <div class="nugu_bg"></div>
-        <div class="nugu_contents">
+      <div class="mid_banner_area">
+        <div class="img_wrap"><img src="img/nugu_bg.jpg" alt=""></div>
+        <div class="txt_wrap">
           <h2>NUGU</h2>
           <p>“ARIA”, how are you today?<br>
             NUGU is a voice-controlled artificial intelligence assistant that was born on September 1, 2016.<br>
@@ -488,158 +201,285 @@
         </div>
       </div>
 
-      <div class="new_album">
+      <div class="prd_area">
 
         <h2>New Album</h2>
         <div class="swiper-container album_slide">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/new_album/1-1.jpg" alt="" class="cover">
-                <img src="img/new_album/1-2.png" alt="" class="record">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
+                <div class="img_wrap">
+                  <img src="img/new_album/1-1.jpg" alt="" class="cover">
+                  <img src="img/new_album/1-2.png" alt="" class="record">
+                </div>
+                <div class="txt_wrap">
+                  <em>BoA The 10th Album</em>
                   <h3>BETTER</h3>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/new_album/2-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
+                <div class="img_wrap">
+                  <img src="img/new_album/1-1.jpg" alt="" class="cover">
+                  <img src="img/new_album/1-2.png" alt="" class="record">
+                </div>
+                <div class="txt_wrap">
+                  <em>BoA The 10th Album</em>
                   <h3>BETTER</h3>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/new_album/3-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
+                <div class="img_wrap">
+                  <img src="img/new_album/1-1.jpg" alt="" class="cover">
+                  <img src="img/new_album/1-2.png" alt="" class="record">
+                </div>
+                <div class="txt_wrap">
+                  <em>BoA The 10th Album</em>
                   <h3>BETTER</h3>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/4-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/5-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div></div>
-              <div class="swiper-slide">
-                <img src="img/new_album/6-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/7-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/8-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/9-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/10-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/new_album/11-1.jpg" alt="">
-                <div class="album_desc">
-                  <span>BoA The 10th Album</span>
-                  <h3>BETTER</h3>
-                </div>
-              </div>
+              </div>              
             </div>
   
           <!-- If we need pagination ::페이지 네비게이션(선택) -->
-          <div class="album-swiper-pagination"></div>
+          <!-- <div class="album-swiper-pagination"></div> -->
+
         </div>
       </div>
 
-      <div id="nugu_story">
+     
+      <div class="video_area">
         <h2>성장하는 NUGU 스토리</h2>
-        <div class="vid_container">
-          <div class="vid_show">
-            <iframe width="966" height="543" src="https://www.youtube.com/embed/Xipa65PwdrI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="966" height="543" src="https://www.youtube.com/embed/fMoGqCC_Nrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="inner clear">
+          <div class="video_con">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BKMRnLC91qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <div class="vid_thumb">
-            
-              <div class="thumb_slider">
-                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
-                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
-                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
-                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
-                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
-                <div><img src="img/vid_thumb/index-story-thumb-mom_lg.jpg" alt=""></div>
+          <div class="video_thumb">
+                <div class="swiper-container video_slide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide active" data-iframe="BKMRnLC91qY">
+                      <img src="img/vid_thumb/thumb_1.jpg" alt="">
+                      <div class="txt_wrap">
+                        <span class="tit">스마트한 산책러의 <br>인생강의</span>
+                        <span class="desc">마트한 산책러의</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" data-iframe="du7paNLQN9M">
+                      <img src="img/vid_thumb/thumb_2.jpg" alt="">
+                      <div class="txt_wrap">
+                        <span class="tit">스마트한 산책러의 <br>인생강의</span>
+                        <span class="desc">마트한 산책러의</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" data-iframe="RDMMBKMRnLC91qY">
+                      <img src="img/vid_thumb/thumb_3.jpg" alt="">
+                      <div class="txt_wrap">
+                        <span class="tit">스마트한 산책러의 <br>인생강의</span>
+                        <span class="desc">마트한 산책러의</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/vid_thumb/thumb_4.jpg" alt="">
+                      <div class="txt_wrap">
+                        <span class="tit">스마트한 산책러의 <br>인생강의</span>
+                        <span class="desc">마트한 산책러의</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
+                <div class="btn prev"><i class="fi-rr-angle-up"><span class="blind">이전</span></i></div>
+                <div class="btn next"><i class="fi-rr-angle-down"><span class="blind">다음</span></i></div>
+     
               </div>
-             
-          </div>
+          
         </div>
       </div>
 
 
 
-
-      <div id="carrier">
-        <div class="carrier_wrap">
-          <div class="carrier_title">
-            <span>캐리어 <strong>스토리허브</strong></span>
+      <div class="event_area">
+        <span class="bg_txt">비교할 수 없는 캐리어의 기술력</span>
+        <div class="inner">
+          <div class="tit">
+            <h2>캐리어 <em>스토리허브</em></h2>
             <p>언론에서 다뤄진 캐리어에어컨에 대한 기사들과 캐리어에서 만든 다양한 영상 및 컨텐츠를 소개합니다.</p>
-            <a href="#" class="more_btn">LEARN&nbsp<strong>MORE</strong>
-              <span><img src="img/carrier_arrow.png" alt=""></span>
+            <a href="#" class="more_btn">LEARN&nbsp<span>MORE</span>
+              <span class="more_circle"><img src="img/carrier_arrow.png" alt=""></span>
             </a>
           </div>
-          <div class="carrier_items">
-            <div class="carrier_item left">
+          <div class="event_item_wrap clear">
+            <div class="event_item left">
               <div class="item item1">
-                <a class="item_img">
+                <div class="img_wrap">
                   <img src="img/carrier_3.png" alt="">
                   <a href="#" class="sns"><img src="img/insta_icon.png" alt=""></a>
-                </a>
-                <div class="item_txt">
-                  <a href="#">
-                    <span></span>
-                    <strong>캐리어 VIDEO</strong>
-                    <h5>[캐리어 VIDEO] 바이러스 때문에? 이제는 굿-바이러스 할 때</h5>
-                    <p></p>
-                  </a>
+                </div>
+                <div class="txt_wrap">
+                    <em>캐리어 소셜 미디어</em>
+                    <strong>[캐리어 소셜 미디어] 다양한 조건에서도 적용이 가능한 캐리어 클라윈드 시스템 에어컨</strong>
+                    <p>층고가 높아도, 거리가 멀어도 OK 실외기 1대로 냉방 걱정 END! 다양한 조건에서도 적용이 가능한 캐리어 클라윈드 시스템 에어컨</p>
+                    <span class="date">2021.01.04</span>
                 </div>
               </div>
 
-              <div class="item item2"></div>
+              <div class="item item2">
+                <a class="img_wrap">
+                  <img src="img/carrier_5.png" alt="">
+                  <a href="#" class="sns"><img src="img/youtube_icon.png" alt=""></a>
+                </a>
+                <div class="txt_wrap">
+                  <a href="#">
+                    <em>캐리어 VIDEO</em>
+                    <strong>[캐리어 VIDEO] 바이러스 때문에? 이제는 굿바이-러스 할 때!</strong>
+                    <p>이제 멀어질 필요 없이 가깝고 더 가깝게 #바이러스 에게 캐리어 공기청정기가 전하는 작.별.인.사 오늘부터 GOODBYE-RUS 
+                    ⭐구리 섬유 헤파필터로 바이러스 99.99% 억제
+                    ⭐풍량을 제어하는 비말 확산 억제 운전 모드
+                    ⭐2시간 운전 후 운전 정지 및 환기 알람 시스템
+                    ⭐나노이 기술로 99.9% 초강력 제균, 탈취
+                    </p>
+                    <span class="date">2021.01.04</span>
+
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="carrier_item middle"></div>
-            <div class="carrier_item right"></div>
+            <div class="event_item middle">
+              <div class="item item3">
+                <a class="img_wrap">
+                  <img src="img/carrier_4.png" alt="">
+                  <a href="#" class="sns"><img src="img/youtube_icon.png" alt=""></a>
+                </a>
+                <div class="txt_wrap">
+                  <a href="#">
+                    <em>캐리어 VIDEO</em>
+                    <strong>[캐리어 소셜 미디어] 바이러스 99.99% 억제 공기청정기</strong>
+                    <p>지금 나의 라이프에 가장 필요한
+                      바이러스 99.99% 억제 공기청정기
+                      ⠀
+                      서로 거리를 줄이고 내 공간에서만큼은 안전하게.
+                      캐리어의 혁신적인 기술을 만나보세요!
+                    </p>
+                    <span class="date">2021.01.04</span>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="event_item right">
+              <div class="item item4">
+                <a class="img_wrap">
+                  <img src="img/carrier_2.png" alt="">
+                  <a href="#" class="sns"><img src="img/youtube_icon.png" alt=""></a>
+                </a>
+                <div class="txt_wrap">
+                  <a href="#">
+                    <em>캐리어 VIDEO</em>
+                    <strong>[케리어 소셜 미디어] 기능과 디자인 모두 잡은 에어컨, 에어로 18단 에어컨</strong>
+                    <p>초강력 에어컨트롤과 나노이 제균으로
+                      기능과 디자인 모두 잡은 에어컨
+                      지금 바로 나만의 공기를 스타일링 해보세요.
+                      
+                      글로벌 캐리어의 기술력에 대한 자신감, 에어로 18단 에어컨
+                    </p>
+                    <span class="date">2021.01.04</span>
+
+                  </a>
+                </div>
+              </div>
+              <div class="item item5">
+                <a class="img_wrap">
+                  <img src="img/carrier_1.png" alt="">
+                  <a href="#" class="sns"><img src="img/facebook_icon.png" alt=""></a>
+                </a>
+                <div class="txt_wrap">
+                  <a href="#">
+                    <em>캐리어 VIDEO</em>
+                    <strong>[캐리어 VIDEO] 바이러스 때문에? 이제는 굿바이-러스 할 때!</strong>
+                    <p>이제 멀어질 필요 없이 가깝고 더 가깝게 #바이러스 에게 캐리어 공기청정기가 전하는 작.별.인.사 오늘부터 GOODBYE-RUS 
+                    ⭐구리 섬유 헤파필터로 바이러스 99.99% 억제
+                    ⭐풍량을 제어하는 비말 확산 억제 운전 모드
+                    ⭐2시간 운전 후 운전 정지 및 환기 알람 시스템
+                    ⭐나노이 기술로 99.9% 초강력 제균, 탈취
+                    </p>
+                    <span class="date">2021.01.04</span>
+
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-
     </section>
+    <footer class="footer">
+      <div class="footer_wrap">
+        <div class="footer_left">
+          <div class="footer_logo"><a href="#"></a></div>
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">이메일주소 무단수집거부</a></li>
+          </ul>
+        </div>
+        <div class="footer_middle">
+          <span>COPYRIGHT &copy; 2020<i>CLK CORPORATION</i>. ALL RIGHTS RESERVED</span>
+          <p>오텍캐리어(주)</p>
+          <ul>
+            <li>대표 : 강성희, 정필경, 송용민</li>
+            <li>사업자등록번호 : 410-81-08964</li>
+            <li>통신판매업신고 : 2014-광주광산-0215(<a href="">사업자정보확인</a>), 구매안전서비스(KCP)
+            </li>
+          </ul>
+        </div>
+        <div class="footer_right">
+          <div>
+            <div class="footer_sns">
+              <a href="#"><img src="img/img_footer_sns1.png" alt=""></a>
+              <a href="#"><img src="img/img_footer_sns2.png" alt=""></a>
+              <a href="#"><img src="img/img_footer_sns3.png" alt=""></a>
+              <a href="#"><img src="img/img_footer_sns4.png" alt=""></a>
+            </div>
+            <div class="family_btns">
+              <a href="#" class="family_mall">FAMILY &nbsp<b>MALL</b><i class="fa fa-angle-right"></i></a>
+              <a href="#" class="family_site">FAMILY &nbsp<b>SITE</b><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+          <div class="place">
+            <div>
+              <span class="area">서울</span>
+              <span class="desc">주소 : 서울특별시 영등포구 국제금융로 10 ,Two IFC, 11층<br>
+                전화 : 02-3441-8839</span>
+              </div>
+            <div>
+              <span class="area">광주공장</span>
+              <span class="desc">주소 : 광주광역시 광산구 하남산단3번로 55 <br>
+                전화 : 062-958-0123</span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs">
+        <div class="cs_wrapper">
+          <a href="#" class="buy">
+            <img src="img/footer_cs1.png" alt="">
+            <span>제품구입 문의</span>
+            <p>1588 &#183; 8855</p>
+          </a>
+          <a href="#" class="service">
+            <img src="img/footer_cs1.png" alt="">
+            <span>서비스 문의</span>
+            <p>1588 &#183; 8866</p>
+          </a>
+          <a href="#" class="rental">
+            <img src="img/footer_cs1.png" alt="">
+            <span>제품구입 문의</span>
+            <p>1544 &#183; 8820</p>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -648,24 +488,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/custom.js"></script>
-   <script>
 
-jQuery(document).ready(function($) {
-      $('.thumb_slider').slick({
-        dots: false,
-        infinite: true,
-        arrows: true,
-        vertical:true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // autoplay: true,
-        autoplaySpeed: 2000,
-        nextArrow:$('.next'),
-        prevArrow:$('.prev'),
-    });
-});
-
-   </script>
   </body>
 </html>

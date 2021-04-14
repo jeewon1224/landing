@@ -11,20 +11,19 @@ $(function(){
 		// lazy: {
 		// 	loadPrevNext: true,
 		//   },
-		preloadImages: false,
-    spaceBetween: 100,
+    spaceBetween: 150,
     loop: true,
-		autoplay: {
-		  delay: 2000,
-			disableOnInteraction: false,
-		},
+		// autoplay: {
+		//   delay: 2000,
+		// 	disableOnInteraction: false,
+		// },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.main_wrap .swiper-pagination',
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.main_wrap .btn.next',
+      prevEl: '.main_wrap .btn.prev',
     },
   });
   
@@ -72,36 +71,86 @@ $(function(){
 
 
 
-  $(".pro_item").hide();
+  // $(".pro_item").hide();
 
-  $(".pro_tab > ul > li").mouseover(function(){
-    var index = $(this).index();
-    $(".pro_item").hide();
-    $(".pro_item").eq(index).show();
-  })
+  // $(".pro_tab > ul > li").mouseover(function(){
+  //   var index = $(this).index();
+  //   $(".pro_item").hide();
+  //   $(".pro_item").eq(index).show();
 
-  $(".pro_tab > ul > li").eq(0).trigger("click");
-  $(".pro_item").eq(0).show();
+  //   // $(".pro_item").eq(index).addClass('active');
+  // });
 
-
-
-
+  // $(".pro_tab > ul > li").eq(0).trigger("click");
+  // $(".pro_item").eq(0).show();
 
 
-    //initialize swiper when document ready
-    var mySwiper = new Swiper('.album_slide', {
-      // Optional parameters 
+ 
+
+  // $('.product .pro_tab ul li span').hide();
+
+  // $(".pro_tab > ul > li").mouseover(function(){
+  //   var index = $(this).index();
+  //   $('.product .pro_tab ul li span').hide();
+  //   $('.product .pro_tab ul li span').eq(index).show();
+
+  //   // $(".pro_item").eq(index).addClass('active');
+  // });
+  // $('.product .pro_tab ul li span').eq(0).trigger("click");
+  // $('.product .pro_tab ul li span').eq(0).show();
+
+    $('.pro_tab li').mouseover(function() {
+      idx = $(this).index()+1;
+      $('.pro_tab li').removeClass('active');
+      $(this).addClass('active');
+
+      $(".pro_item").removeClass('active');
+      $('#proItem'+idx).addClass('active');
+
+    })
+
+
+
+
+
+
+
+  // var tab = $('.product .pro_tab ul li');
+  // var tab_bg = $('.product .pro_tab ul li span');
+
+  // tab.mouseover(function(){
+  //   var index = $(this).index();
+  //   tab_bg.eq(index).addClass('on');
+  // });
+  // tab.mouseleave(function(){
+  //   tab_bg.removeClass('on');
+  // });
+
+  
+  // if($(".pro_item").hasClass('active')){
+  //   tab_bg.eq(index).addClass('on');
+
+  // }else{
+  //   tab_bg.removeClass('on');
+
+  // };
+
+ 
+
+
+
+
+
+
+  // 앨범 슬라이드
+  var mySwiper = new Swiper('.album_slide', {
       slidesPerView: 'auto', // 슬라이드를 한번에 3개를 보여준다
-      // loopFillGroupWithBlank : true,
       loop: true, // loop 를 true 로 할경우 무한반복 슬라이드, false 로 할경우 슬라이드의 끝에서 더보여지지 않음
-      // If we need pagination 
       pagination: {
           el: '.album-swiper-pagination',
           clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
           // type: 'progressbar', // And if we need scrollbar 진행바
       },
-      
-      // Navigation arrows 
       navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -111,18 +160,44 @@ $(function(){
       //   disableOnInteraction: false,
       // },
       centeredSlides: true,
-      slidesPerView: 5,
-      spaceBetween: 0,
+
+      spaceBetween: 80,
   })
 
 
 
+ 
+  var mySwiper = new Swiper('.video_slide', {
+    direction:'vertical',
+    slidesPerView: 3,
+    spaceBetween: 10,
+    simulateTouch: false,
+    navigation: {
+      nextEl: '.video_thumb .btn.next',
+      prevEl: '.video_thumb .btn.prev',
+  },
+  })
 
-  var frame_idx = $('iframe').index();
-  	console.log(frame_idx);
 
-    $('iframe').hide();
-    $("iframe").eq(0).show();
+$('.video_slide .swiper-slide').click(function(){
+  src= $(this).data('iframe');
+
+  $('.video_slide .swiper-slide').removeClass('active');
+  $(this).addClass('active');
+
+  $('.video_con iframe').remove();
+  $('.video_con').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+src+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+})
+
+
+
+
+
+  // var frame_idx = $('iframe').index();
+  // 	console.log(frame_idx);
+
+  //   $('iframe').hide();
+  //   $("iframe").eq(0).show();
 
 
 })
