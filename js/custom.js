@@ -1,9 +1,19 @@
-// $(document).ready(function(){
-  
-// });
-
-
 $(function(){
+
+
+$('#lang').click(function(){
+  // $('.lang').removeClass('active');
+  $('.lang').toggleClass('active');
+})
+
+
+
+
+
+
+
+
+
 
   var swiper = new Swiper('.main_slide', {
     centeredSlides: true,
