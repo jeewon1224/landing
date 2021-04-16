@@ -123,35 +123,6 @@ $('#lang').click(function(){
 
 
 
-
-
-  // var tab = $('.product .pro_tab ul li');
-  // var tab_bg = $('.product .pro_tab ul li span');
-
-  // tab.mouseover(function(){
-  //   var index = $(this).index();
-  //   tab_bg.eq(index).addClass('on');
-  // });
-  // tab.mouseleave(function(){
-  //   tab_bg.removeClass('on');
-  // });
-
-  
-  // if($(".pro_item").hasClass('active')){
-  //   tab_bg.eq(index).addClass('on');
-
-  // }else{
-  //   tab_bg.removeClass('on');
-
-  // };
-
- 
-
-
-
-
-
-
   // 앨범 슬라이드
   var mySwiper = new Swiper('.album_slide', {
       slidesPerView: 'auto', // 슬라이드를 한번에 3개를 보여준다
@@ -189,25 +160,16 @@ $('#lang').click(function(){
   })
 
 
-$('.video_slide .swiper-slide').click(function(){
-  src= $(this).data('iframe');
+  $('.video_slide .swiper-slide').click(function(){
+    src= $(this).data('iframe');
 
-  $('.video_slide .swiper-slide').removeClass('active');
-  $(this).addClass('active');
+    $('.video_slide .swiper-slide').removeClass('active');
+    $(this).addClass('active');
 
-  $('.video_con iframe').remove();
-  $('.video_con').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+src+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-})
+    $('.video_con iframe').remove();
+    $('.video_con').append('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+src+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+  })
 
-
-
-
-
-  // var frame_idx = $('iframe').index();
-  // 	console.log(frame_idx);
-
-  //   $('iframe').hide();
-  //   $("iframe").eq(0).show();
 
 
 })
