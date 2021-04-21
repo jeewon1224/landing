@@ -15,7 +15,7 @@ $('#lang').click(function(){
 
 
 
-  var swiper = new Swiper('.main_slide', {
+  var swiper1 = new Swiper('.main_slide', {
     centeredSlides: true,
 		slidesPerView: 'auto',
 		// lazy: {
@@ -35,8 +35,19 @@ $('#lang').click(function(){
       nextEl: '.main_wrap .btn.next',
       prevEl: '.main_wrap .btn.prev',
     },
+    on:{
+      slideChangeTransitionEnd:function(){
+        idx = this.realIndex+1; //swiper의 this
+        $('#mainWrap').removeClass('bg1 bg2 bg3');
+        $('#mainWrap').addClass('bg'+idx);
+      }
+    }
   });
   
+
+
+  
+
 
 
       

@@ -25,7 +25,9 @@ body{font-family: 'Noto Sans KR', sans-serif;
 .gnb .gnb_wrapper .gnb_menu{float: left;}
 .gnb .gnb_wrapper .gnb_menu>ul{font-size: 16px; line-height: 60px;}
 .gnb .gnb_wrapper .gnb_menu>ul>li{margin-right: 40px; float: left;}
-.gnb .gnb_wrapper .gnb_menu>ul>li>a{color: #fff;}
+.gnb .gnb_wrapper .gnb_menu>ul>li>a{color: #fff; position: relative;}
+.gnb .gnb_wrapper .gnb_menu>ul>li>a::after{position: absolute; bottom: -10px; left: 50%;  width: 0; content: '';height: 2px; transition: .3s; background-color: tomato;}
+.gnb .gnb_wrapper .gnb_menu>ul>li:hover >a::after{width: 100%; left: 0;}
 .gnb .gnb_wrapper .gnb_logo{width: 120px; height: 60px; position: absolute; left: 50%; transform: translateX(-50%); _background: #000;}
 .gnb .gnb_wrapper .gnb_logo>a{display: block; height: 100%;}
 
