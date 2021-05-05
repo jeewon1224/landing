@@ -38,7 +38,7 @@ $('#lang').click(function(){
     on:{
       slideChangeTransitionEnd:function(){
         idx = this.realIndex+1; //swiper의 this
-        $('#mainWrap').removeClass('bg1 bg2 bg3');
+        $('#mainWrap').removeClass('bg1 bg2 bg3 bg4 bg5 bg6');
         $('#mainWrap').addClass('bg'+idx);
       }
     }
@@ -164,6 +164,7 @@ $('#lang').click(function(){
     slidesPerView: 3,
     spaceBetween: 10,
     simulateTouch: false,
+    loop: true,
     navigation: {
       nextEl: '.video_thumb .btn.next',
       prevEl: '.video_thumb .btn.prev',
