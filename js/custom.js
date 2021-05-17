@@ -2,31 +2,17 @@ $(function(){
 
 
 $('#lang').click(function(){
-  // $('.lang').removeClass('active');
   $('.lang').toggleClass('active');
 })
-
-
-
-
-
-
-
 
 
 
   var swiper1 = new Swiper('.main_slide', {
     centeredSlides: true,
 		slidesPerView: 'auto',
-		// lazy: {
-		// 	loadPrevNext: true,
-		//   },
     spaceBetween: 150,
+    autoplay:true,
     loop: true,
-		// autoplay: {
-		//   delay: 2000,
-		// 	disableOnInteraction: false,
-		// },
     pagination: {
       el: '.main_wrap .swiper-pagination',
       clickable: true,
@@ -46,79 +32,7 @@ $('#lang').click(function(){
   
 
 
-  
 
-
-
-      
-  // var mySwiper = new Swiper ('.swiper-container', {
-  //   speed: 400,
-  //   spaceBetween: 300,
-  //   initialSlide: 0,
-  //   //truewrapper adoptsheight of active slide
-  //   autoHeight: false,
-  //   // Optional parameters
-  //   // direction: 'horizontal',
-  //   loop: true,
-  //   // delay between transitions in ms
-  //   autoplay: 5000,
-  //   autoplayStopOnLast: false, // loop false also
-  //   // If we need pagination
-  //   // pagination: '.swiper-pagination',
-  //   // paginationType: "bullets",
-  //   pagination: {
-  //         el: '.swiper-pagination',
-  //         clickable: true,
-  //       },
-  //   // Navigation arrows
-  //   nextButton: '.swiper-button-next',
-  //   prevButton: '.swiper-button-prev',
-    
-  //   // And if we need scrollbar
-  //   //scrollbar: '.swiper-scrollbar',
-  //   // "slide", "fade", "cube", "coverflow" or "flip"
-  //   effect: 'slide',
-  //   // Distance between slides in px.
-  //   spaceBetween: 220,
-  //   //
-  //   slidesPerView: 2,
-  //   //
-  //   centeredSlides: true,
-  //   //
-  //   slidesOffsetBefore: 0,
-  //   //
-  //   grabCursor: true,
-  // })        
-
-
-
-  // $(".pro_item").hide();
-
-  // $(".pro_tab > ul > li").mouseover(function(){
-  //   var index = $(this).index();
-  //   $(".pro_item").hide();
-  //   $(".pro_item").eq(index).show();
-
-  //   // $(".pro_item").eq(index).addClass('active');
-  // });
-
-  // $(".pro_tab > ul > li").eq(0).trigger("click");
-  // $(".pro_item").eq(0).show();
-
-
- 
-
-  // $('.product .pro_tab ul li span').hide();
-
-  // $(".pro_tab > ul > li").mouseover(function(){
-  //   var index = $(this).index();
-  //   $('.product .pro_tab ul li span').hide();
-  //   $('.product .pro_tab ul li span').eq(index).show();
-
-  //   // $(".pro_item").eq(index).addClass('active');
-  // });
-  // $('.product .pro_tab ul li span').eq(0).trigger("click");
-  // $('.product .pro_tab ul li span').eq(0).show();
 
     $('.pro_tab li').mouseover(function() {
       idx = $(this).index()+1;
@@ -136,21 +50,17 @@ $('#lang').click(function(){
 
   // 앨범 슬라이드
   var mySwiper = new Swiper('.album_slide', {
-      slidesPerView: 'auto', // 슬라이드를 한번에 3개를 보여준다
-      loop: true, // loop 를 true 로 할경우 무한반복 슬라이드, false 로 할경우 슬라이드의 끝에서 더보여지지 않음
+      slidesPerView: 'auto', 
+      loop: true, 
       pagination: {
           el: '.album-swiper-pagination',
-          clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-          // type: 'progressbar', // And if we need scrollbar 진행바
+          clickable : true, 
       },
       navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
       },
-      // autoplay: {
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      // },
+
       centeredSlides: true,
 
       spaceBetween: 80,
@@ -184,4 +94,68 @@ $('#lang').click(function(){
 
 
 
-})
+
+
+
+  // var offset = $( '.header .gnb' ).offset();
+  // console.log(offset);
+  // var logo = $('.header .header_wrap h1 a img');
+
+  // $( window ).scroll( function() {
+  //   curr =$(this).scrollTop();
+  //   if ( curr > offset.top ) {
+  //     $('.header').addClass('fixed');
+
+  //   }else {
+  //     $('.header').removeClass('fixed');
+  //   }
+  // });
+
+
+
+
+
+
+
+  var offset = $( '.header .gnb' ).offset();
+  console.log(offset);
+
+  $( window ).scroll( function() {
+    if ( $( document ).scrollTop() > offset.top ) {
+      $( '.header .gnb' ).addClass( 'fixed' );
+    }else {
+      $( '.header .gnb' ).removeClass( 'fixed' );
+    }
+  });
+
+
+
+
+  // $('.gnb .gnb_wrapper .gnb_menu>ul>li').mouseover(function(){
+  //   $('.gnb .depth2').slideDown();
+  // });
+  // $('.gnb .gnb_wrapper .gnb_menu>ul>li').mouseleave(function(){
+  //   $('.gnb .depth2').slideUp();
+  // });
+
+
+	// $('.gnb .gnb_wrapper .gnb_menu').hover(function(){
+	// 	$('.gnb .depth2').stop().slideDown(100);
+	// }, function(){
+	// 	$('.gnb .depth2').stop().slideUp(100);
+	// });
+	
+
+	$('.gnb .gnb_wrapper .gnb_menu').hover(function(){
+		$('.header').css('background', '#111111cc');
+	}, function(){
+		$('.header').css('background', 'none');
+	});
+	
+
+
+
+
+
+
+});
