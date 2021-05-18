@@ -156,6 +156,20 @@ $('#lang').click(function(){
 
 
 
-
+  var swiper1 = new Swiper('.bp_banner', {
+    centeredSlides: true,
+		slidesPerView: 'auto',
+    spaceBetween: 150,
+    // autoplay:true,
+    loop: true,
+    pagination: {
+      el: '.banner .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.banner .btn.next',
+      prevEl: '.banner .btn.prev',
+    }
+  });
 
 });
