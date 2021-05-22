@@ -19,4 +19,4 @@ http://rlawldnjs1224.dothome.co.kr/works/02/index.html <br>
 
 
 ## Plugin
-[Swiper](https://swiperjs.com/){: target="_blank"}
+[Swiper](https://swiperjs.com/)
