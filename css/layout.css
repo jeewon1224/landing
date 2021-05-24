@@ -40,10 +40,10 @@ bottom: -10px; left: 50%; width: 60px; content: ''; height: 60px; transition: .3
 .gnb .gnb_wrapper .gnb_member>ul>li{margin-left: 40px;float: left; height: 60px;}
 .gnb .gnb_wrapper .gnb_member>ul>li i{font-size: 20px; line-height: 62px;}
 
-.gnb .gnb_menu .depth2{height: 0; opacity: 0; display: none; position: absolute; transition: .3s 1s; transform: translateY(-90px);}
-.gnb .gnb_menu .depth2.show{opacity: 1; height: 450px; display: block; transform: translateY(0);transition: .3s 1s;}
+.gnb .gnb_menu .depth2{position: absolute; height: 0; opacity: 0; transition: opacity .3s .2s; overflow: hidden; width: 100%;}
+.gnb .gnb_menu .depth2.show{opacity: 1; height: 450px; display: block; }
 .gnb .gnb_menu .depth2 .depth2_inner{padding-top: 20px;}
-.gnb .gnb_menu .depth2 ul{transition: .4s;}
+.gnb .gnb_menu .depth2 ul{transition: .3s;}
 .gnb .gnb_menu .depth2 ul li{color: #fff; line-height: 30px; transition: .3s;}
 .gnb .gnb_menu .depth2 ul.artist_list li a{position: relative;}
 .gnb .gnb_wrapper .gnb_menu .depth2 ul.artist_list li a::after{ content: ""; display: inline-block; position: absolute; width: 40px; height: 40px; border-radius: 50%; right: -20px; top: 50%; transform: translateY(-50%) scale(0.3); transition: .3s; visibility: hidden; opacity: 0; z-index: -1;}
